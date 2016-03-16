@@ -14,6 +14,6 @@ Then(/^The added product should be present in the Cart$/) do
   expect(find(:css , 'div#sc-buy-box')['data-quantity'].to_i).to eq(1)
 end
 
-Then(/^The added product should be present in the Cart$/) do
+Then(/^The added product should not be present in the Cart$/) do
   expect(0).to eq 1
 end
