@@ -6,6 +6,7 @@ require 'appium_capybara'
 
 DEVICE_ID = ENV['ADB_DEVICE_ARG']
 APPIUM_PORT = ENV['APPIUM_PORT']
+HIVE_QUEUE_NAME = ENV['HIVE_QUEUE_NAME']
 def appium_caps
   {
     'MY_DEVICE'=> { platformName: "Android", deviceName: "#{HIVE_QUEUE_NAME}", udid: "#{DEVICE_ID}", browserName: "chrome" } #, platformVersion: "5.1.1", deviceName: "#{DEVICE_ID}"
