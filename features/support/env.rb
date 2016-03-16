@@ -8,7 +8,7 @@ DEVICE_ID = ENV['ADB_DEVICE_ARG']
 APPIUM_PORT = ENV['APPIUM_PORT']
 def appium_caps
   {
-    'MY_DEVICE'=> { platformName: "Android", deviceName: "#{DEVICE_ID}", browserName: "chrome" } #, platformVersion: "5.1.1"
+    'MY_DEVICE'=> { platformName: "Android", deviceName: "#{HIVE_QUEUE_NAME}", udid: "#{DEVICE_ID}", browserName: "chrome" } #, platformVersion: "5.1.1", deviceName: "#{DEVICE_ID}"
   }
 end
 
